@@ -1,9 +1,5 @@
-puts 'If you enter a number, I just might make it the roman numeral value.'
-while true 
-	number = gets.chomp
-	if number != ''
-		def roman number
-			if number > 0 && number < 5
+def roman number
+  		if number > 0 && number < 5
 				puts 'I' * number
 				puts 'Next Number?'	
 			elsif number >= 5 && number < 10
@@ -43,6 +39,12 @@ while true
 				puts 'There has to be a better way.'
 			end	
 		end
+
+puts 'If you enter a number, I just might make it the roman numeral value.'
+while true 
+	number = gets.chomp
+	if number != ''
+		
 	else
 		break
 	end
